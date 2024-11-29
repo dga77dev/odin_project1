@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project One - Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftContainer">
+            <div class="logo">
+                <img src="../images/odin-lined.png"/>
+                ODIN
+            </div>
+
+            <div class="footer">
+                Photo by 
+                <a href='https://unsplash.com/es/@nate_dumlao'>Nathan Dumlao</a>
+                on 
+                <a href='https://unsplash.com/es/'>Unsplash</a>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+        <form action="#" method="post" name="form" id="form">
+            <div class="seccion1">
+                <p>
+                    This is not a real online service! You know you need something<br/>
+                    like this in your life to help you realize your deepest dreams.<br/>
+                    Sign up now to get started.
+                </p>
+                <p>&nbsp;</p>
+                <p>You <i>know</i> yo want to.</p>
+            </div>
+
+            <div class="seccion2">
+                <h3 class="textSection2">Let´s do this!</h3>
+                <div class="secciongrid">
+                    <div class="f-last">
+                        <label for="last-name">LAST NAME</label><br/>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div class="f-name">
+                        <label for="first-name">FIRST NAME</label><br/>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="f-email">
+                        <label for="email">EMAIL</label><br/>
+                        <input type="email" name="email" id="email" title="Enter your email" required>
+                    </div>
+                    <div class="f-phone">
+                        <label for="phone-number">PHONE NUMBER</label><br/>
+                        <input type="tel" name="phone-numer" id="phone-numer">
+                    </div>
+                    <div class="f-pass">
+                        <label for="pass">PASSWORD</label><br/>
+                        <input type="password" name="pass" id="pass" required minlength="5" class="error">
+                    </div>
+                    <div class="f-pass-confirm">
+                        <label for="pass-confirm">CONFIRM PASSWORD</label><br/>
+                        <input type="password" name="pass-confirm" id="pass-confirm" required minlength="5" class="error">
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion3">
+                <button type="submit" form="form" id="create-btn">Create Account</button>
+                <p>&nbsp;</p>
+                <p class="text-end">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+
+<div class="input-item">
+                    

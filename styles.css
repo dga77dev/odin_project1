@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    background-color:#e6ecea;
+    margin: 0 auto;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    flex: 1 1 0;
+}
+
+.leftContainer{
+    width: 40vw;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
+}
+
+.logo{
+    position:relative;
+    background-color: black;
+    opacity: 0.77;
+    color: white;
+    font-size: 5.5rem;
+    font-family: 'Norse';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 45%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.footer{
+    width: 100%;
+    color: white;
+    bottom: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer a{
+    color:white;
+}
+
+.seccion1{
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+}
+
+.seccion2{
+    min-width: 50vw;
+    background-color: orange;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.textSection2{
+    margin: 2% 5%;
+}
+
+.secciongrid {  
+    margin: 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "name last ."
+        "email phone ."
+        "pass1 pass2 .";
+}
+.f-last { grid-area: last; }
+
+.f-name { grid-area: name; }
+
+.f-email { grid-area: email; }
+
+.f-phone { grid-area: phone; }
+
+.f-pass { grid-area: pass1; }
+
+.f-pass-confirm { grid-area: pass2; }
+
+.seccion3{
+    width: 100%;
+    background-color: #e6ecea;
+    margin: 5% 0%;
+}
+
+.seccion2 label{
+    font-size: 0.7rem;
+}
+
+button{
+    margin-left: 5%;
+    cursor: pointer;
+    background-color: #596D48;
+    color:white;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px black;
+}
+
+.text-end{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-left: 5%;
+
+}
+
+.text-end a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #596D48
+}
+
+input[class="error"]:invalid {
+    border: 1.3px solid #e01f33;
+}
+
+input[class="error"]:valid {
+    border: 1.3px solid green;
+}
+
+
+input[class="error"]:invalid::after{
+    content: "*the password need five caracters";
+    color:red;
+    font-size:1rem;
+    display: block;
+    margin: 0 5%;    
+}
+
+
